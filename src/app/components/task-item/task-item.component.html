@@ -1,0 +1,11 @@
+<div class="bg-gray-200 px-4 py-3 rounded-md">
+  <h3 class="text-xl font-semibold relative">
+    {{ task.text }}
+    <span
+      (click)="onDelete(task)"
+      class="text-red-700 absolute right-0 top-0 cursor-pointer"
+      >x</span
+    >
+  </h3>
+  <p>{{ task.date }}</p>
+</div>

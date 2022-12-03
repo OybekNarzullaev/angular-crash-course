@@ -16,7 +16,13 @@
       "id": 3,
       "text": "Uchinchi",
       "date": "17/11/2022",
-      "reminder": true
+      "reminder": false
+    },
+    {
+      "text": "To'rtinchi",
+      "date": "1/12/2022",
+      "reminder": false,
+      "id": 5
     }
   ]
 }

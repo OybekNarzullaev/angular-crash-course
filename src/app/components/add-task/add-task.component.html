@@ -1,0 +1,42 @@
+<form
+  *ngIf="showAddTask"
+  class="w-full text-xl rounded-xl py-5 flex flex-col gap-3"
+  (ngSubmit)="onSubmit()"
+>
+  <div class="flex flex-col">
+    <label class="mb-3" for="text">Task:</label>
+    <input
+      class="border-2 p-3 rounded-lg"
+      type="text"
+      name="text"
+      id="text"
+      placeholder="Add task..."
+      [(ngModel)]="text"
+    />
+  </div>
+  <div class="flex flex-col">
+    <label class="mb-3" for="day">Day & Time</label>
+    <input
+      class="border-2 p-3 rounded-lg"
+      type="text"
+      name="day"
+      id="day"
+      placeholder="Add Day & Time"
+      [(ngModel)]="day"
+    />
+  </div>
+  <div class="flex gap-3 justify-start items-center">
+    <label for="reminder">Set Reminder</label>
+    <input
+      type="checkbox"
+      name="reminder"
+      id="reminder"
+      [(ngModel)]="reminder"
+    />
+  </div>
+  <input
+    type="submit"
+    value="Save Task"
+    class="bg-blue-500 p-3 text-white rounded-xl cursor-pointer"
+  />
+</form>

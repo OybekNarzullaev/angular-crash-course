@@ -1,4 +1,8 @@
-<div class="bg-gray-200 px-4 py-3 rounded-md">
+<div
+  [ngClass]="{ 'border-l-8 border-green-600': task.reminder }"
+  (dblclick)="onToggle(task)"
+  class="bg-gray-200 px-4 py-3 rounded-md"
+>
   <h3 class="text-xl font-semibold relative">
     {{ task.text }}
     <span
